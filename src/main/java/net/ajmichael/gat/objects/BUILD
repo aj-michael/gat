@@ -1,10 +1,16 @@
+package(default_visibility = ["//visibility:public"])
+
 java_library(
     name = "objects",
     srcs = [
         "BlobObject.java",
-        "CommitObject.java",
         "GitObject.java",
-        "TreeObject.java",
+        "Mode.java",
+        "commit/CommitObject.java",
+        "tree/TreeEntry.java",
+        "tree/TreeObject.java",
     ],
-    visibility = ["//visibility:public"],
+    deps = [
+        "@guava//jar",
+    ],
 )

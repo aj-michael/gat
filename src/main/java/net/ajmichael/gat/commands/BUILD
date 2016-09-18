@@ -1,4 +1,4 @@
 java_library(
     name = "commands",
-    srcs = glob(["**"]),
+    srcs = glob(["*.java"]),
 )
